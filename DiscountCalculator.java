@@ -2,7 +2,7 @@ public class DiscountCalculator {
 
     public double calculateDiscount(String customerType, int totalOrdersInLastYear, boolean isSubscribedToNewsletter) {
         
-        // 1. Check for the "Infeasible" Rule (Constraint) [cite: 25, 26, 27]
+        // 1. Check for the "Infeasible" Rule (Constraint)
         // Using "NEW".equals() protects against null values
         if ("NEW".equalsIgnoreCase(customerType) && totalOrdersInLastYear >= 10) {
             throw new IllegalArgumentException("NEW customers cannot have 10 or more orders.");
@@ -28,7 +28,7 @@ public class DiscountCalculator {
             totalDiscount += 2.0;
         }
 
-        // 6. Maximum Cap [cite: 28]
+        // 6. Maximum Cap 
         // Using Math.min is a slightly cleaner way to write the cap logic
         return Math.min(totalDiscount, 15.0);
     }

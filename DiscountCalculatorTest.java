@@ -7,7 +7,7 @@ public class DiscountCalculatorTest {
 
     private final DiscountCalculator calculator = new DiscountCalculator();
 
-    @ParameterizedTest [cite: 13, 14]
+    @ParameterizedTest
     @CsvSource({
         "'NEW',     5,  true,  7.0",
         "'NEW',     2,  false, 5.0",
