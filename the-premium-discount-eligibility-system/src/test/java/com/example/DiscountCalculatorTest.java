@@ -1,3 +1,5 @@
+package com.example;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -22,7 +24,7 @@ public class DiscountCalculatorTest {
 
     @Test
     void testInfeasibleCombination() {
-        assertThrows(IllegalArgumentException.class, () -> { [cite: 42]
+        assertThrows(IllegalArgumentException.class, () -> {
             calculator.calculateDiscount("NEW", 10, false);
         });
     }

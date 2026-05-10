@@ -1,3 +1,5 @@
+package com.example;
+
 public class DiscountCalculator {
 
     public double calculateDiscount(String customerType, int totalOrdersInLastYear, boolean isSubscribedToNewsletter) {
